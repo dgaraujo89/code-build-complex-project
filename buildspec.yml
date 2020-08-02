@@ -9,8 +9,8 @@ phases:
     commands:
       - echo Build started
       - ./build.sh
-      - docker tag spring-demo $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/spring-demo:latest .
-      - docker tag code-with-quarkus $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/code-with-quarkus:latest .
+      - docker tag spring-demo $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/spring-demo:latest
+      - docker tag code-with-quarkus $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/code-with-quarkus:latest
   post_build:
     commands:
       - echo Build complete
